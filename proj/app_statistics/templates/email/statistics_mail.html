@@ -1,0 +1,16 @@
+<html>
+    <head></head>
+    <body>
+        <div class="container">
+            <h1>Всего рассылок за последнии сутки: {{count}}</h1>
+            {% for mailing in mailings %}
+                <h3>Сообщение: id({{mailing.id}}) {{mailing.text}} </h3>
+                {% for message in mailing.messages %}
+                    <p>Статус: {{message.status}}</p>
+                    <p>Кол-во: {{message.count}}</p>
+                    <hr/>
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </body>
+</html>

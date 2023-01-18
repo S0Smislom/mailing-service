@@ -1,0 +1,9 @@
+django
+celery[redis]
+psycopg2
+djangorestframework
+markdown
+django-filter
+django-timezone-field
+tzdata
+drf-yasg
